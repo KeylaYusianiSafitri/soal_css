@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>soal 15a-b keyla</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 3000px; 
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+
+    .container-absolute {
+      position: relative; 
+      background-color: white;
+      border: 1px solid #ccc;
+      width: 100%;
+      max-width: 500px;
+      height: 120px;
+      margin-bottom: 40px;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 10px;      
+      right: 10px;  
+      width: 32px;
+      height: 32px;
+      background-color: black;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 14px;
+      user-select: none;
+    }
+
+ 
+    .fixed-box {
+      position: fixed;
+      bottom: 24px;   
+      right: 24px;    
+      width: 320px;     
+      height: 180px;   
+      background-color: #888888; 
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <br>
+
+  <div class="container-absolute">
+    <p style="margin: 0; color: #555;">soal 15a</p>
+    <div class="close-button">X</div>
+  </div>
+
+  <div class="fixed-box">
+    soal 15b. Fixed Div (320px &times; 180px)
+  </div>
+
+</body>
+</html>
