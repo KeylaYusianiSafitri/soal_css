@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>soal 11a-b-c Keyla</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px 16px;
+  }
+
+  h1 {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 200px 75px;
+  }
+
+  .grid-item {
+    padding: 6px;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .item1 {
+    background-color: #add8e6; 
+  }
+
+  .item2 {
+    background-color: #f4c2c2; 
+  }
+
+  .grid-11b {
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+    margin-bottom: 32px;
+  }
+ 
+  .grid-11b .item1,
+  .grid-11b .item2 {
+    background-color: #f4c2c2; 
+  }
+ 
+  .grid-11b .item3 {
+    background-color: #add8e6; 
+  }
+ 
+  .grid-11c {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+ 
+  .grid-11c .grid-item {
+    background-color: #f4c2c2; 
+  }
+
+  /* 11d */
+    .Container-Card{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .Background{
+      width: 200px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding-bottom: 15px;
+    }
+    .Contact{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .Friends{
+      width:30px;
+      height: 30px;
+      border-radius: 50px;
+    }
+    .Add{
+      background-color:cornflowerblue;
+      border: none;
+      padding: 8px;
+      border-radius: 5px;
+      color: white
+    }
+    .Mutual{
+      color: gray;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .Box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+</style>
+</head>
+<body>
+ <h1> 11a. </h1>
+
+  <div class="grid-container">
+    <div class="grid-item item1">200px</div>
+    <div class="grid-item item2">75px</div>
+  </div>  
+<br><bR>
+  <p><strong>11b.</strong> </p>
+ 
+  <div class="grid-11b">
+    <div class="grid-item item1">col1</div>
+    <div class="grid-item item2">col2</div>
+    <div class="grid-item item3">col3</div>
+  </div>
+ 
+  <p><strong>11c.</strong> </p>
+ 
+  <div class="grid-11c">
+    <div class="grid-item">col1</div>
+    <div class="grid-item">col2</div>
+    <div class="grid-item">col3</div>
+    <div class="grid-item">col4</div>
+    <div class="grid-item">col1</div>
+    <div class="grid-item">col2</div>
+    <div class="grid-item">col3</div>
+    <div class="grid-item">col4</div>
+  </div>
+ 
+<br>
+   <h3>11d</h3>
+  <div class="Box">
+  <div class="Background">
+  <img src="mort.jpeg" alt="Balon" class="Contact">
+  <h3>Oliver</h3>
+  <p class="Mutual">
+  <img src="kucing.png" alt="Harimau-Berotot" class="Friends">
+    2 mutual friends</p>
+  <button class="Add">Add Friends</button>
+  </div>
+  <div class="Background">
+  <img src="kelinci.jpg" alt="Ngakak" class="Contact">
+  <h3>Mimi</h3>
+  <p class="Mutual">
+  <img src="kucing.png" alt="Harimau-Berotot" class="Friends">
+    3 mutual friends</p>
+  <button class="Add">Add Friends</button>
+  </div>
+    <div class="Background">
+  <img src="kucing.png" alt="Kaget" class="Contact">
+  <h3>Rex</h3>
+  <p class="Mutual">
+  <img src="kucing.png" alt="Harimau-Berotot" class="Friends">
+    4 mutual friends</p>
+  <button class="Add">Add Friends</button>
+  </div>
+</div>
+</body>
+</html>
+ 
 
