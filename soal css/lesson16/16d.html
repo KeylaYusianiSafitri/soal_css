@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>soal 16d keyla</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Roboto, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      padding: 60px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .video-card {
+      width: 340px;
+      background-color: white;
+      border-radius: 12px;
+      overflow: visible; 
+    }
+
+    .thumbnail-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #e0e0e0;
+    }
+
+    .thumbnail-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-time {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      font-size: 12px;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .video-info-grid {
+      display: flex;
+      padding: 12px 4px;
+      gap: 12px;
+    }
+
+    .channel-pic-wrapper {
+      position: relative;       
+      display: inline-block;     
+      width: 40px;
+      height: 40px;
+    }
+
+    .channel-pic {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .channel-tooltip {
+      position: absolute;
+      top: 50px;              
+      left: 0;
+      
+      background-color: white;
+      width: 220px;
+      padding: 14px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      border: 1px solid #e5e5e5;
+      opacity: 0;
+      pointer-events: none;       
+      transition: opacity 0.2s ease-in-out;
+      z-index: 999;
+    }
+
+    .tooltip-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .tooltip-text-container {
+      display: flex;
+      flex-direction: column;  
+      gap: 2px;
+    }
+
+    .tooltip-channel-name {
+      font-size: 14px;
+      font-weight: bold;
+      color: #0f0f0f;
+    }
+
+    .tooltip-subscribers {
+      font-size: 13px;
+      color: #606060;
+    }
+
+    .channel-pic-wrapper:hover .channel-tooltip {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .video-details {
+      flex: 1;
+    }
+
+    .video-title {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.4;
+      color: #0f0f0f;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    .channel-name, .video-stats {
+      font-size: 12px;
+      color: #606060;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-card">
+    
+    <div class="thumbnail-container">
+      <img class="thumbnail-img" src="youtube.png" alt="Video Thumbnail">
+      <div class="video-time">8:22</div>
+    </div>
+
+    <div class="video-info-grid">
+      
+      <div class="channel-pic-wrapper">
+        <img class="channel-pic" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Channel Profil">
+        
+        <div class="channel-tooltip">
+          <img class="tooltip-avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Tooltip Avatar">
+          <div class="tooltip-text-container">
+            <div class="tooltip-channel-name">Markiplier</div>
+            <div class="tooltip-subscribers">30M subscribers</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-details">
+        <h3 class="video-title">Try Not To Laugh Challenge #9</h3>
+        <p class="channel-name">Markiplier</p>
+        <p class="video-stats">19M views &bull; 4 years ago</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
