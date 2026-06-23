@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>soal 10e Keyla</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px 16px;
+  }
+
+  .card-list {
+    text-align: center; 
+  }
+
+  .card {
+    display: inline-block;    
+    vertical-align: top;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-image {
+    width: 100%;
+    height: 140px;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-info {
+    padding: 10px 12px 12px;
+  }
+
+  .card-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1c1e21;
+    margin-bottom: 6px;
+  }
+
+  .card-mutual {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .card-mutual img {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+
+  .card-mutual span {
+    font-size: 13px;
+    color: #65676b;
+    vertical-align: middle;
+  }
+
+  .card-button {
+    display: block;
+    width: 100%;
+    background-color: #1877f2;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .card-button:hover {
+    background-color: #166fe5;
+  }
+</style>
+</head>
+<body>
+
+  <div class="card-list">
+
+    <div class="card">
+      <div class="card-image">
+        <img src="mort.jpeg" alt="Oliver">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Oliver</div>
+        <div class="card-mutual">
+          <img src="mort.jpeg" alt="">
+          <span>2 mutual friends</span>
+        </div>
+        <div class="card-button">Add Friend</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="kelinci.jpg" alt="Mimi">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Mimi</div>
+        <div class="card-mutual">
+          <img src="mort.jpeg" alt="">
+          <span>3 mutual friends</span>
+        </div>
+        <div class="card-button">Add Friend</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="kucing.png" alt="Rex">
+      </div>
+      <div class="card-info">
+        <div class="card-name">Rex</div>
+        <div class="card-mutual">
+          <img src="mort.jpeg" alt="">
+          <span>4 mutual friends</span>
+        </div>
+        <div class="card-button">Add Friend</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

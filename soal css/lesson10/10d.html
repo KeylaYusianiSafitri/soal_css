@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>soal 10d keyla</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px 16px;
+  }
+  h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .card {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .card img.photo {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+  }
+  .card-body {
+    padding: 10px 12px 12px;
+  }
+  .name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1c1e21;
+    margin-bottom: 6px;
+  }
+  .mutual {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .mutual img.icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .mutual span {
+    font-size: 13px;
+    color: #65676b;
+  }
+  .add-btn {
+    display: block;
+    width: 100%;
+    background: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .add-btn:hover {
+    background: #166fe5;
+  }
+</style>
+</head>
+<body>
+
+<h1>10d. </h1>
+
+<div class="cards">
+
+  <div class="card">
+    <img class="photo" src="kucing.png" alt="Oliver">
+    <div class="card-body">
+      <div class="name">Oliver</div>
+      <div class="mutual">
+        <img class="icon" src="kelinci.jpg">
+        <span>2 mutual friends</span>
+      </div>
+      <button class="add-btn">Add Friend</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="photo" src="kelinci.jpg" alt="Mimi">
+    <div class="card-body">
+      <div class="name">Mimi</div>
+      <div class="mutual">
+        <img class="icon" src="kelinci.jpg" alt="">
+        <span>3 mutual friends</span>
+      </div>
+      <button class="add-btn">Add Friend</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="photo" src="mort.jpeg" alt="Rex">
+    <div class="card-body">
+      <div class="name">Rex</div>
+      <div class="mutual">
+        <img class="icon" src="kelinci.jpg" alt="">
+        <span>4 mutual friends</span>
+      </div>
+      <button class="add-btn">Add Friend</button>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
