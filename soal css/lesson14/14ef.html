@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>soal 14 e-f keyla</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      height: 3000px; 
+      padding-top: 65px;
+      padding-left: 250px;
+    }
+
+    .fb-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 55px;
+      background-color: white;
+      border-bottom: 1px solid #e0e0e0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      z-index: 200; 
+      
+
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 0 16px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-name {
+      font-weight: 600;
+      font-size: 15px;
+      color: #050505;
+    }
+
+    .header-right {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn-blue {
+      background-color: #1877f2;
+      color: white;
+    }
+
+    .btn-blue:hover {
+      background-color: #166fe5;
+    }
+
+    .btn-gray {
+      background-color: #e4e6eb;
+      color: #050505;
+    }
+
+    .btn-gray:hover {
+      background-color: #d8dadf;
+    }
+
+    .discord-double-sidebar {
+      position: fixed;
+      left: 0;
+      top: 55px;
+      bottom: 0;
+      display: flex; 
+      z-index: 100;
+    }
+
+    .sidebar-servers {
+      width: 72px;
+      background-color: #202225;
+      padding: 12px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .server-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+      transition: border-radius 0.2s;
+    }
+
+    .server-icon:hover {
+      border-radius: 30%; 
+    }
+
+    .sidebar-channels {
+      width: 160px;
+      background-color: #2f3136;
+      color: #8e9297;
+      padding: 16px 12px;
+    }
+
+    .channels-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .channel-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .channel-item {
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 6px 8px;
+      border-radius: 4px;
+    }
+
+    .channel-item:hover {
+      background-color: #34373c;
+      color: #dcddde;
+    }
+
+
+    .main-content {
+      padding: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="fb-header">
+    <div class="header-left">
+      <img class="header-avatar" src="kucing.png" alt="Oliver Cat">
+      <span class="profile-name">Oliver Cat</span>
+    </div>
+    <div class="header-right">
+      <button class="btn btn-blue">Add Friend</button>
+      <button class="btn btn-gray">Message</button>
+    </div>
+  </header>
+
+  <div class="discord-double-sidebar">
+    <div class="sidebar-servers">
+      <img class="server-icon" src="kelinci.jpg" alt="Server 1">
+      <img class="server-icon" src="kucing.png" alt="Server 2">
+      <img class="server-icon" src="mort.jpeg" alt="Server 3">
+    </div>
+
+    <div class="sidebar-channels">
+      <div class="channels-header">
+        <span>INFO</span>
+        <span style="cursor: pointer; font-size: 16px;">+</span>
+      </div>
+      <ul class="channel-list">
+        <li class="channel-item"># new-videos</li>
+        <li class="channel-item"># updates</li>
+        <li class="channel-item"># faq</li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="main-content">
+   
+  </main>
+
+</body>
+</html>
