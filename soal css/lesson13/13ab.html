@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>soal 13a & 13b Keyla</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      padding: 32px 24px;
+    }
+
+    .instruction {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      max-width: 560px;
+    }
+
+    .instruction span {
+      font-weight: 700;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+
+    .box-13a {
+      display: flex;
+      width: 300px;
+    }
+
+    .box-13a .el-100 {
+      width: 100px;
+      min-height: 60px;
+      background: #f48fb1;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      font-size: 0.85rem;
+      color: #000;
+    }
+
+    .box-13a .el-200 {
+      width: 200px;
+      min-height: 60px;
+      background: #90caf9;
+    }
+
+    .box-13b {
+      display: flex;
+      width: 480px;
+      height: 80px;
+    }
+
+    .box-13b .left {
+      width: 120px;
+      flex-shrink: 0;
+      background: #f48fb1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 6px 8px;
+    }
+
+
+    .box-13b .right {
+      flex: 1;
+      background: #90caf9;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .box-13b .right-top {
+      padding: 6px 8px;
+      font-size: 0.82rem;
+      color: #000;
+    }
+
+    .box-13b .right-bottom {
+      display: flex;
+      justify-content: flex-end;
+      padding: 4px 6px;
+    }
+
+    .dark-label {
+      background: #1a1a1a;
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 1px 4px;
+    }
+
+    .light-label {
+      font-size: 0.82rem;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 13a -->
+  <div class="section">
+    <p class="instruction">
+      <span>13a.</span>
+    </p>
+
+    <div class="box-13a">
+      <div class="el-100">item1</div>
+      <div class="el-200"></div>
+    </div>
+  </div>
+
+  <!-- 13b -->
+  <div class="section">
+    <p class="instruction">
+      <span>13b.</span> 
+    </p>
+
+    <div class="box-13b">
+      <div class="left">
+        <span class="light-label">row1</span>
+        <span class="dark-label">row2</span>
+      </div>
+
+      <div class="right">
+        <div class="right-top">
+          <span class="dark-label">row1</span>
+        </div>
+        <div class="right-bottom">
+          <span class="dark-label">row2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

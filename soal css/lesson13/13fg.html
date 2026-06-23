@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal 13f-g Keyla</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f7f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .tweet-container {
+      background-color: white;
+      width: 100%;
+      max-width: 550px;
+      padding: 16px;
+      border: 1px solid #e1e8ed;
+      border-radius: 12px;
+      display: flex;
+    }
+
+    .avatar-column {
+      margin-right: 12px;
+    }
+
+    .profile-pic {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .content-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .user-info {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+
+    .display-name {
+      font-weight: bold;
+      color: #0f1419;
+      font-size: 15px;
+    }
+
+    .username {
+      color: #536471;
+      font-size: 15px;
+    }
+
+    /* Teks Tweet */
+    .tweet-text {
+      color: #0f1419;
+      font-size: 15px;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .youtube-card {
+      border: 1px solid #cfd9de;
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex; 
+      cursor: pointer;
+    }
+
+    .card-image-preview {
+      width: 120px;
+      background-color: #cccccc;
+      flex-shrink: 0;
+    }
+
+    .card-text-preview {
+      flex: 1;
+      padding: 12px;
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;
+      gap: 2px;
+    }
+
+    .card-domain {
+      color: #536471;
+      font-size: 14px;
+    }
+
+    .card-title {
+      color: #0f1419;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tweet-container">
+    
+    <div class="avatar-column">
+      <img class="profile-pic" src="mort.jpeg" alt="Profile">
+    </div>
+
+    <div class="content-column">
+      
+      <div class="user-info">
+        <span class="display-name">supersimple.dev</span>
+        <span class="username">@SuperSimpleDev</span>
+      </div>
+
+      <p class="tweet-text">
+        What is backend web development? A complete overview. New video is up!
+      </p>
+
+      <div class="youtube-card">
+        <div class="card-image-preview"></div>
+        
+        <div class="card-text-preview">
+          <span class="card-domain">youtube.com</span>
+          <p class="card-title">Backend web development - a complete overview (2021)</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

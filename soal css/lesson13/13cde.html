@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>soal 13c-d-e Keyla</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #d1d1d1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .inbox-container {
+      background-color: white;
+      width: 100%;
+      max-width: 450px;
+      padding: 16px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+   
+    .inbox-header {
+      font-size: 11px;
+      font-weight: 600;
+      color: #757575;
+      letter-spacing: 0.5px;
+      padding: 0 16px 12px 16px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .email-row {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 14px 16px;
+      border-bottom: 1px solid #f1f1f1;
+    }
+
+    .email-row:last-child {
+      border-bottom: none; 
+    }
+
+    .avatar-container {
+      margin-right: 14px;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+  
+    .email-content {
+      flex: 1; 
+      display: block; 
+    }
+
+    .email-top-line {
+      display: flex;
+      justify-content: space-between; 
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .sender-name {
+      font-size: 14px;
+      font-weight: bold;
+      color: #202124;
+    }
+
+    .email-time {
+      font-size: 12px;
+      color: #5f6368;
+    }
+
+    .email-subject {
+      font-size: 13px;
+      font-weight: 600;
+      color: #202124;
+      margin-bottom: 3px;
+    }
+
+    .email-snippet {
+      font-size: 13px;
+      color: #5f6368;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="inbox-container">
+    
+    <div class="inbox-header">ALL INBOXES</div>
+
+    <div class="email-row">
+      <div class="avatar-container">
+        <img class="avatar" src="mort.jpeg" alt="Chewy">
+      </div>
+      <div class="email-content">
+        <div class="email-top-line">
+          <div class="sender-name">Chewy Promotions</div>
+          <div class="email-time">4:58 PM</div>
+        </div>
+        <div class="email-subject">Biggest sales of the year!</div>
+        <div class="email-snippet">Hey there! We're writing to tell you about our...</div>
+      </div>
+    </div>
+
+    <div class="email-row">
+      <div class="avatar-container">
+        <img class="avatar" src="kucing.png" alt="Best Buy">
+      </div>
+      <div class="email-content">
+        <div class="email-top-line">
+          <div class="sender-name">Best Buy</div>
+          <div class="email-time">12:32 PM</div>
+        </div>
+        <div class="email-subject">Your Best Buy eReceipt</div>
+        <div class="email-snippet">Thank you for shopping at Best Buy, here is...</div>
+      </div>
+    </div>
+
+    <div class="email-row">
+      <div class="avatar-container">
+        <img class="avatar" src="kelinci.jpg" alt="Netflix">
+      </div>
+      <div class="email-content">
+        <div class="email-top-line">
+          <div class="sender-name">Netflix</div>
+          <div class="email-time">9:00 AM</div>
+        </div>
+        <div class="email-subject">Here's what's coming soon to Netflix</div>
+        <div class="email-snippet">Brand new movies and shows, old favorites...</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
