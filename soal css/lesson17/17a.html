@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Lesson 17a - Responsive Text</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Roboto, Arial, sans-serif;
+    }
 
+    body {
+      background-color: #f9f9f9;
+      padding: 24px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      column-gap: 16px;
+      row-gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .video-card {
+      width: 100%;
+      background-color: transparent;
+    }
+
+    .thumbnail-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #e0e0e0;
+      margin-bottom: 12px;
+    }
+
+    .thumbnail-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .video-time {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      font-size: 12px;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .video-info-block {
+      display: flex;
+      gap: 12px;
+    }
+
+    .channel-pic {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .video-details {
+      flex: 1;
+    }
+
+    .video-title {
+      font-weight: 500;
+      color: #0f0f0f;
+      margin-bottom: 4px;
+      
+      font-size: 14px;
+      line-height: 20px; 
+    }
+
+    .channel-name, 
+    .video-stats {
+      color: #606060;
+
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .channel-name {
+      margin-bottom: 2px;
+    }
+
+    @media (min-width: 1001px) {
+      
+      .video-title {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .channel-name, 
+      .video-stats {
+        font-size: 14px;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-grid">
+
+    <div class="video-card">
+      <div class="thumbnail-container">
+        <img class="thumbnail-img" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500" alt="Thumbnail 1">
+        <div class="video-time">14:20</div>
+      </div>
+      <div class="video-info-block">
+        <img class="channel-pic" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" alt="Avatar 1">
+        <div class="video-details">
+          <h3 class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</h3>
+          <p class="channel-name">Marques Brownlee</p>
+          <p class="video-stats">3.4M views &bull; 6 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="thumbnail-container">
+        <img class="thumbnail-img" src="youtube.png" alt="Thumbnail 2">
+        <div class="video-time">8:22</div>
+      </div>
+      <div class="video-info-block">
+        <img class="channel-pic" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100" alt="Avatar 2">
+        <div class="video-details">
+          <h3 class="video-title">Try Not To Laugh Challenge #9</h3>
+          <p class="channel-name">Markiplier</p>
+          <p class="video-stats">19M views &bull; 4 years ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="thumbnail-container">
+        <img class="thumbnail-img" src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=500" alt="Thumbnail 3">
+        <div class="video-time">9:13</div>
+      </div>
+      <div class="video-info-block">
+        <img class="channel-pic" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100" alt="Avatar 3">
+        <div class="video-details">
+          <h3 class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</h3>
+          <p class="channel-name">SSSniperWolf</p>
+          <p class="video-stats">12M views &bull; 1 year ago</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
