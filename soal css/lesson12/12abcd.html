@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lesson 12a-b-c-d Keyla</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px 16px;
+  }
+
+  h1 {
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  section {
+    margin-bottom: 28px;
+  }
+
+  .item {
+    padding: 6px;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .pink {
+    background-color: #f4c2c2;
+  }
+
+  .blue {
+    background-color: #add8e6;
+  }
+
+
+  .flex-12a {
+    display: flex;
+  }
+
+  .flex-12a .item1 {
+    width: 200px;
+  }
+
+  .flex-12a .item2 {
+    width: 75px;
+  }
+
+  .flex-12b {
+    display: flex;
+  }
+
+  .flex-12b .item1 {
+    width: 50px;
+  }
+
+  .flex-12b .item2 {
+    flex-grow: 1; 
+  }
+
+  .flex-12b .item3 {
+    width: 75px;
+  }
+
+
+  .flex-12c {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-12c .item {
+    background-color: #f4c2c2;
+  }
+
+  .flex-12d {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 1px solid gray;
+    padding: 0 10px;
+  }
+
+  .flex-12d .item {
+    background-color: transparent;
+    color: #d35d8a;
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+  <!-- 12a -->
+  <section>
+    <p>12a. </p>
+    <div class="flex-12a">
+      <div class="item item1 blue">200px</div>
+      <div class="item item2 pink">75px</div>
+    </div>
+  </section>
+
+  <!-- 12b -->
+  <section>
+    <p>12b.</p>
+    <div class="flex-12b">
+      <div class="item item1 pink">item1</div>
+      <div class="item item2 pink">item2</div>
+      <div class="item item3 blue">item3</div>
+    </div>
+  </section>
+
+  <!-- 12c -->
+  <section>
+    <p>12c. </p>
+    <div class="flex-12c">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+    </div>
+  </section>
+
+  <!-- 12d -->
+  <section>
+    <p>12d. </p>
+    <div class="flex-12d">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+    </div>
+  </section>
+
+</body>
+</html>
